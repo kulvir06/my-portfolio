@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kulvir Singh - Portfolio</title>
+    <meta name="description" content="Kulvir Singh - Software Developer Portfolio. Full-stack development, machine learning, and computer vision projects.">
+    <meta name="keywords" content="portfolio, software developer, web development, machine learning, computer vision">
+    <meta name="author" content="Kulvir Singh">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Kulvir Singh</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#resume" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Kulvir Singh</h1>
+                <p class="hero-subtitle">Software Developer</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="showContacts()">Show Contacts</button>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-placeholder">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>kulvir.singh@example.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+1 (555) 123-4567</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-birthday-cake"></i>
+                    <span>January 15, 1995</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>San Francisco, CA, USA</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About me</h2>
+            <p class="about-text">
+                I am a passionate software developer with a strong foundation in modern web technologies and a keen eye for creating intuitive user experiences. My journey in software development has been driven by continuous learning and a desire to solve complex problems through elegant code solutions. I believe in writing clean, maintainable code and staying up-to-date with the latest industry trends and best practices.
+            </p>
+            
+            <h3 class="subsection-title">My Interests</h3>
+            <div class="interests-grid">
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h4>Web Development</h4>
+                    <h5>Full Stack Development</h5>
+                    <p>Creating intuitive and user-friendly websites with modern technologies.</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h4>Machine Learning</h4>
+                    <h5>AI & Data Science</h5>
+                    <p>Developing machine learning models to solve real-world problems.</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h4>Computer Vision</h4>
+                    <h5>Image Processing</h5>
+                    <p>Working with computer vision algorithms and image analysis.</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h4>Cooking</h4>
+                    <h5>Culinary Arts</h5>
+                    <p>Culinary creativity nourishes my love for food and experimentation.</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <h4>Soccer</h4>
+                    <h5>Sports & Fitness</h5>
+                    <p>Playing soccer helps me focus, de-stress, and maintain physical fitness.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            
+            <div class="resume-section">
+                <h3 class="subsection-title">Education</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>Master of Science in Computer Science</h4>
+                            <h5>Stanford University</h5>
+                            <p class="timeline-date">2022 - 2024</p>
+                            <p>GPA: 3.9/4.0</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>Bachelor of Technology in Computer Science</h4>
+                            <h5>Delhi Technological University</h5>
+                            <p class="timeline-date">2018 - 2022</p>
+                            <p>GPA: 8.9/10.0 (Top 5%)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resume-section">
+                <h3 class="subsection-title">Professional Experience</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>Software Engineer</h4>
+                            <h5>Google, Mountain View, CA</h5>
+                            <p class="timeline-date">June 2024 - Present</p>
+                            <ul>
+                                <li>Developed scalable backend services using Go and Python</li>
+                                <li>Improved system performance by 40% through optimization</li>
+                                <li>Collaborated with cross-functional teams on large-scale projects</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>Software Engineering Intern</h4>
+                            <h5>Microsoft, Redmond, WA</h5>
+                            <p class="timeline-date">May 2023 - August 2023</p>
+                            <ul>
+                                <li>Built full-stack web applications using React and Node.js</li>
+                                <li>Implemented CI/CD pipelines reducing deployment time by 60%</li>
+                                <li>Contributed to open-source projects and internal tools</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resume-section">
+                <h3 class="subsection-title">Skills</h3>
+                <div class="skills-container">
+                    <div class="skills-category">
+                        <h4>Languages:</h4>
+                        <p>JavaScript, Python, Java, C++, Go, SQL, HTML, CSS</p>
+                    </div>
+                    <div class="skills-category">
+                        <h4>Frameworks & Libraries:</h4>
+                        <p>React, Node.js, Express, Django, Spring Boot, TensorFlow, PyTorch</p>
+                    </div>
+                    <div class="skills-category">
+                        <h4>Tools & Technologies:</h4>
+                        <p>Git, Docker, AWS, Kubernetes, MongoDB, PostgreSQL, Redis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Application</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="cv">Computer Vision</button>
+                <button class="filter-btn" data-filter="game">Game Development</button>
+                <button class="filter-btn" data-filter="blockchain">Blockchain</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h4>E-commerce Platform</h4>
+                        <p>Full-stack e-commerce website with payment integration</p>
+                        <div class="portfolio-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="ml">
+                    <div class="portfolio-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h4>Stock Price Prediction</h4>
+                        <p>ML model for predicting stock prices using LSTM networks</p>
+                        <div class="portfolio-tags">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>LSTM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="cv">
+                    <div class="portfolio-image">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h4>Face Recognition System</h4>
+                        <p>Real-time face detection and recognition application</p>
+                        <div class="portfolio-tags">
+                            <span>OpenCV</span>
+                            <span>Python</span>
+                            <span>Deep Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="game">
+                    <div class="portfolio-image">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h4>2D Platformer Game</h4>
+                        <p>Side-scrolling platformer game with physics engine</p>
+                        <div class="portfolio-tags">
+                            <span>Unity</span>
+                            <span>C#</span>
+                            <span>Game Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="blockchain">
+                    <div class="portfolio-image">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h4>Smart Contract DApp</h4>
+                        <p>Decentralized application for voting system</p>
+                        <div class="portfolio-tags">
+                            <span>Solidity</span>
+                            <span>Web3.js</span>
+                            <span>Ethereum</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h4>Task Management App</h4>
+                        <p>Collaborative task management with real-time updates</p>
+                        <div class="portfolio-tags">
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                            <span>Real-time</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>I'm always interested in hearing about new opportunities and exciting projects. Feel free to reach out!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>kulvir.singh@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>San Francisco, CA, USA</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="mailto:kulvir.singh@example.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Send Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Kulvir Singh. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
